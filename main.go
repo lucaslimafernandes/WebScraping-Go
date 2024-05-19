@@ -6,11 +6,14 @@ import (
 	"log"
 	"os"
 	s "strings"
+	"time"
 	"web-scraping-go/dg"
 )
 
 // CLI init WebScraping
 func main() {
+
+	t0 := time.Now()
 
 	wordPtr := flag.String("word", "foo", "a string")
 	numbPtr := flag.Int("numb", 42, "an int")
@@ -23,12 +26,37 @@ func main() {
 	log.Println(*boolPtr)
 
 	// dg.CollyExample()
-	dg.DR_Crawler()
-	dg.DR_SubCrawler()
+	// dg.DR_Crawler()
+	// dg.DR_SubCrawler()
+
+	// dg.DR_Crawler_Products()
+	// 30 pg, 1435 urls products
+	// Iniciou: 21:14:21
+	// Terminou: 21:15:21
+	// Levou: 1m1.213956847s
+
+	dg.DR_Crawler_Products_go()
+	// 30 pg, 1435 urls products
+	// Iniciou: 21:16:21
+	// Terminou: 21:16:21
+	// Levou: 1.672431276s
+
+	// 3125 pg, 131302 products url's, 11M archive size
+	// Iniciou: 21:20:21
+	// Terminou: 21:25:21
+	// Levou: 4m29.739605204s
+
 	// gg()
 	// gg2()
 	// proxy_utils.CollyExample()
 	// proxy_utils.Exx()
+
+	t1 := time.Now()
+
+	fmt.Println("Iniciou:", t0.Format("15:04:15"))
+	fmt.Println("Terminou:", t1.Format("15:04:15"))
+
+	fmt.Println("Levou:", t1.Sub(t0))
 
 }
 
