@@ -35,7 +35,7 @@ func main() {
 	// Terminou: 21:15:21
 	// Levou: 1m1.213956847s
 
-	dg.DR_Crawler_Products_go()
+	// dg.DRCrawlerUrisProducts()
 	// 30 pg, 1435 urls products
 	// Iniciou: 21:16:21
 	// Terminou: 21:16:21
@@ -45,6 +45,12 @@ func main() {
 	// Iniciou: 21:20:21
 	// Terminou: 21:25:21
 	// Levou: 4m29.739605204s
+
+	dg.Scrape_produtos()
+	// 132.365 products - 100 nthreads
+	// Iniciou: 21:59:21
+	// Terminou: 22:22:22
+	// Levou: 22m50.503719862s
 
 	// gg()
 	// gg2()
