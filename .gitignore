@@ -10,6 +10,7 @@
 
 # Crawler arquives
 *.txt
+*.csv
 
 # Test binary, built with `go test -c`
 *.test
