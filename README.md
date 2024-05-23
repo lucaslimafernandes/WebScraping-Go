@@ -1,6 +1,46 @@
 # WebScraping-Go
 Web Scraping project written in Go, based on WebGlobal evaluation.
 
+## About this project
+
+This project is part of studies on the Go/Golang programming language.
+
+Using Go1.22.2 linux/amd64 and [go-colly](https://go-colly.org/), I crawl all product URLs and then scrape the data.
+
+Saving URL's in txt file and product's name, SKU and price in CSV file.
+
+### Run
+
+
+	Usage go run main.go [OPTIONS]
+	or ./web-scraping-go [OPTIONS]
+
+    -crawler		Run the crawler to discover all products URLs!
+    -scrape		    Run the scraper to collect all products data!
+    -nthreads 100	Set threads number, optional, default 100
+
+
+
+### Author
+
+[Lucas Lima Fernandes](https://www.linkedin.com/in/lucaslimafernandes/)
+
+
+### Benchmarks
+
+Perfomance
+- 132.365 products - 100 nthreads
+- Iniciou: 21:59:21
+- Terminou: 22:22:22
+- Levou: 22m50.503719862s
+
+### Contributing
+
+Feel free to open new issues and PR's.
+
+
+
+
 ## About evaluation
 
 ### 📌 Avaliação Python

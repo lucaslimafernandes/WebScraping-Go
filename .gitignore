@@ -8,9 +8,8 @@
 *.so
 *.dylib
 
-# Crawler arquives
-*.txt
-*.csv
+# Crawler arquivos teste
+/testes1
 
 # Test binary, built with `go test -c`
 *.test
