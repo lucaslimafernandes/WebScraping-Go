@@ -1,4 +1,4 @@
-package dr
+package drogaraia
 
 import (
 	"fmt"

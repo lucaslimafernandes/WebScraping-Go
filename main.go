@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 	"time"
-	"web-scraping-go/dr"
+	"web-scraping-go/drogaraia"
 
 	"github.com/briandowns/spinner"
 )
@@ -32,11 +32,11 @@ func main() {
 	flag.Parse()
 
 	if *crw_links {
-		dr.DRCrawler()
+		drogaraia.DRCrawler()
 	}
 
 	if *scr_data {
-		dr.Scrape_produtcs(*nthreads)
+		drogaraia.Scrape_produtcs(*nthreads)
 	}
 
 	if !*crw_links && !*scr_data {
